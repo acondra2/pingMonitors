@@ -10,12 +10,12 @@ ping -n 1 %ip% >nul
 if %errorlevel% == 0 (
     if %state% == 0 (
         set state=1
-        echo %time%,%ip%,up.
+        echo %time%,%ip%,up
     )
 ) else (
     if %state% == 1 (
         set state=0
-        echo %time%,%ip%,down.
+        echo %time%,%ip%,down
     )
 )
 goto loop
