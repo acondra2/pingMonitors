@@ -11,12 +11,12 @@ do
     if [ $? -eq 0 ]; then
         if [ $state -eq 0 ]; then
             state=1
-            echo "$(date +%T),$ip,up."
+            echo "$(date +%T),$ip,up"
         fi
     else
         if [ $state -eq 1 ]; then
             state=0
-            echo "$(date +%T),$ip,down."
+            echo "$(date +%T),$ip,down"
         fi
     fi
     sleep 1
