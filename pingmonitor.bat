@@ -3,7 +3,7 @@
 set ip=%1
 set state=0
 
-echo Monitoring %ip%...
+echo time,ip,state
 
 :loop
 ping -n 1 %ip% >nul
